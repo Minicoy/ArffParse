@@ -10,3 +10,6 @@
 # documentation.
 
 name: Upload Python Package
+
+on:
+  release:
