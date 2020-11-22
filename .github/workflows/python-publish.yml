@@ -14,3 +14,6 @@ name: Upload Python Package
 on:
   release:
     types: [published]
+
+jobs:
+  deploy:
