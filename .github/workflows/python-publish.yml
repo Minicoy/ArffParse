@@ -32,3 +32,4 @@ jobs:
         pip install build
     - name: Build package
       run: python -m build
+    - name: Publish package
