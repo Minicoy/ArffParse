@@ -10,3 +10,7 @@ Implementation of <a href="https://arxiv.org/abs/2303.05511">GigaGAN</a> <a href
 ## Appreciation
 
 - <a href="https://stability.ai/">StabilityAI</a> for the sponsorship, as well as my other sponsors, for affording me the independence to open source artificial intelligence.
+
+- <a href="https://huggingface.co/">🤗 Huggingface</a> for their accelerate library
+
+- All the maintainers at <a href="https://github.com/mlfoundations/open_clip">OpenClip</a>, for their SOTA open sourced contrastive learning text-image models
