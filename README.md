@@ -24,3 +24,4 @@ Implementation of <a href="https://arxiv.org/abs/2303.05511">GigaGAN</a> <a href
     title   = {Scaling up GANs for Text-to-Image Synthesis},
     publisher = {arXiv},
     year    = {2023},
+    copyright = {arXiv.org perpetual, non-exclusive license}
