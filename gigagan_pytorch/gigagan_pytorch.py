@@ -7,3 +7,7 @@ from beartype import beartype
 from beartype.typing import List
 
 from einops import rearrange, pack, unpack, repeat, reduce
+
+from gigagan_pytorch.open_clip import OpenClipAdapter
+
+# helpers
