@@ -14,3 +14,5 @@ from gigagan_pytorch.open_clip import OpenClipAdapter
 
 def exists(val):
     return val is not None
+
+# activation functions
