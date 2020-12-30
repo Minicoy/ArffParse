@@ -19,3 +19,5 @@ def exists(val):
 
 def leaky_relu(neg_slope = 0.1):
     return nn.LeakyReLU(neg_slope)
+
+# rmsnorm (newer papers show mean-centering in layernorm not necessary)
