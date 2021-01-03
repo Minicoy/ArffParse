@@ -23,3 +23,4 @@ def leaky_relu(neg_slope = 0.1):
 # rmsnorm (newer papers show mean-centering in layernorm not necessary)
 
 class ChannelRMSNorm(nn.Module):
+    def __init__(self, dim):
