@@ -24,3 +24,4 @@ def leaky_relu(neg_slope = 0.1):
 
 class ChannelRMSNorm(nn.Module):
     def __init__(self, dim):
+        super().__init__()
