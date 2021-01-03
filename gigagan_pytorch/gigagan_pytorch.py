@@ -27,3 +27,7 @@ class ChannelRMSNorm(nn.Module):
         super().__init__()
         self.scale = dim ** 0.5
         self.gamma = nn.Parameter(torch.ones(dim, 1, 1))
+
+    def forward(self, x):
+        normed = F.normalize(x, dim = 1)
+        return normed * self.scale * self.gamma
