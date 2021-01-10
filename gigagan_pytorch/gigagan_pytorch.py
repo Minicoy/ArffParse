@@ -37,3 +37,6 @@ class RMSNorm(nn.Module):
         super().__init__()
         self.scale = dim ** 0.5
         self.gamma = nn.Parameter(torch.ones(dim))
+
+    def forward(self, x):
+        normed = F.normalize(x, dim = -1)
