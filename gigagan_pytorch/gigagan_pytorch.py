@@ -34,3 +34,5 @@ class ChannelRMSNorm(nn.Module):
 
 class RMSNorm(nn.Module):
     def __init__(self, dim):
+        super().__init__()
+        self.scale = dim ** 0.5
