@@ -31,3 +31,6 @@ class ChannelRMSNorm(nn.Module):
     def forward(self, x):
         normed = F.normalize(x, dim = 1)
         return normed * self.scale * self.gamma
+
+class RMSNorm(nn.Module):
+    def __init__(self, dim):
