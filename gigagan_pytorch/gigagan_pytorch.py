@@ -41,3 +41,5 @@ class RMSNorm(nn.Module):
     def forward(self, x):
         normed = F.normalize(x, dim = -1)
         return normed * self.scale * self.gamma
+
+# adaptive conv
