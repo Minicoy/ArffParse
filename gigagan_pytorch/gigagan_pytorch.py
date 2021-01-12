@@ -43,3 +43,4 @@ class RMSNorm(nn.Module):
         return normed * self.scale * self.gamma
 
 # adaptive conv
+# the main novelty of the paper - they propose to learn a softmax weighted sum of N convolutional kernels, depending on the text embedding
