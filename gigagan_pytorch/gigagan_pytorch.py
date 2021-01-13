@@ -44,3 +44,6 @@ class RMSNorm(nn.Module):
 
 # adaptive conv
 # the main novelty of the paper - they propose to learn a softmax weighted sum of N convolutional kernels, depending on the text embedding
+
+def get_same_padding(size, kernel, dilation, stride):
+    return ((size - 1) * (stride - 1) + dilation * (kernel - 1)) // 2
