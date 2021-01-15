@@ -53,3 +53,6 @@ class AdaptiveConv2DMod(nn.Module):
         self,
         dim,
         dim_out,
+        dim_embed,
+        kernel,
+        demod = True,
