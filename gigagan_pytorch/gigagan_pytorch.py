@@ -50,3 +50,5 @@ def get_same_padding(size, kernel, dilation, stride):
 
 class AdaptiveConv2DMod(nn.Module):
     def __init__(
+        self,
+        dim,
