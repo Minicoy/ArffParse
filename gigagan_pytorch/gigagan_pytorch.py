@@ -47,3 +47,6 @@ class RMSNorm(nn.Module):
 
 def get_same_padding(size, kernel, dilation, stride):
     return ((size - 1) * (stride - 1) + dilation * (kernel - 1)) // 2
+
+class AdaptiveConv2DMod(nn.Module):
+    def __init__(
