@@ -56,3 +56,4 @@ class AdaptiveConv2DMod(nn.Module):
         dim_embed,
         kernel,
         demod = True,
+        stride = 1,
