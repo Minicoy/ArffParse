@@ -59,3 +59,5 @@ class AdaptiveConv2DMod(nn.Module):
         stride = 1,
         dilation = 1,
         eps = 1e-8,
+        num_conv_kernels = 1 # set this to be greater than 1 for adaptive
+    ):
