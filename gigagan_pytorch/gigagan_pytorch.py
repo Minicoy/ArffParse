@@ -57,3 +57,5 @@ class AdaptiveConv2DMod(nn.Module):
         kernel,
         demod = True,
         stride = 1,
+        dilation = 1,
+        eps = 1e-8,
