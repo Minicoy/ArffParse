@@ -62,3 +62,4 @@ class AdaptiveConv2DMod(nn.Module):
         num_conv_kernels = 1 # set this to be greater than 1 for adaptive
     ):
         super().__init__()
+        self.eps = eps
