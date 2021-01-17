@@ -63,3 +63,5 @@ class AdaptiveConv2DMod(nn.Module):
     ):
         super().__init__()
         self.eps = eps
+
+        self.dim_out = dim_out
