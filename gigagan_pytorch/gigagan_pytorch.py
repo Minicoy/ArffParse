@@ -68,3 +68,5 @@ class AdaptiveConv2DMod(nn.Module):
 
         self.kernel = kernel
         self.stride = stride
+        self.dilation = dilation
+        self.adaptive = num_conv_kernels > 1
