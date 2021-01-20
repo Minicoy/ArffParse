@@ -70,3 +70,8 @@ class AdaptiveConv2DMod(nn.Module):
         self.stride = stride
         self.dilation = dilation
         self.adaptive = num_conv_kernels > 1
+
+        self.to_mod = nn.Linear(dim_embed, dim)
+        self.to_adaptive_weight = nn.Linear(dim_embed, num_conv_kernels) if self.adaptive else None
+
+        self.weights = nn.Parameter(torch.randn((num_conv_kernels, dim_out, dim, kernel, kernel)))
