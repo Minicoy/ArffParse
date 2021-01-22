@@ -75,3 +75,5 @@ class AdaptiveConv2DMod(nn.Module):
         self.to_adaptive_weight = nn.Linear(dim_embed, num_conv_kernels) if self.adaptive else None
 
         self.weights = nn.Parameter(torch.randn((num_conv_kernels, dim_out, dim, kernel, kernel)))
+
+        self.demod = demod
