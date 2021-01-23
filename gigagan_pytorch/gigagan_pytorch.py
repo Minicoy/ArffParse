@@ -77,3 +77,5 @@ class AdaptiveConv2DMod(nn.Module):
         self.weights = nn.Parameter(torch.randn((num_conv_kernels, dim_out, dim, kernel, kernel)))
 
         self.demod = demod
+
+        nn.init.kaiming_normal_(self.weights, a = 0, mode = 'fan_in', nonlinearity = 'leaky_relu')
