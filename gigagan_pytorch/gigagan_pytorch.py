@@ -79,3 +79,5 @@ class AdaptiveConv2DMod(nn.Module):
         self.demod = demod
 
         nn.init.kaiming_normal_(self.weights, a = 0, mode = 'fan_in', nonlinearity = 'leaky_relu')
+
+    def forward(self, fmap, embed):
