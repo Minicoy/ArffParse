@@ -83,3 +83,5 @@ class AdaptiveConv2DMod(nn.Module):
     def forward(self, fmap, embed):
         """
         notation
+
+        b - batch
