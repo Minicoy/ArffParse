@@ -85,3 +85,6 @@ class AdaptiveConv2DMod(nn.Module):
         notation
 
         b - batch
+        n - convs
+        o - output
+        i - input
