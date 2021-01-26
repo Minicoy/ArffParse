@@ -88,3 +88,5 @@ class AdaptiveConv2DMod(nn.Module):
         n - convs
         o - output
         i - input
+        k - kernel
+        """
