@@ -92,3 +92,5 @@ class AdaptiveConv2DMod(nn.Module):
         """
 
         b, h = fmap.shape[0], fmap.shape[-2]
+
+        weights = self.weights
