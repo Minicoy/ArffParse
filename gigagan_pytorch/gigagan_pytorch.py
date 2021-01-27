@@ -90,3 +90,5 @@ class AdaptiveConv2DMod(nn.Module):
         i - input
         k - kernel
         """
+
+        b, h = fmap.shape[0], fmap.shape[-2]
