@@ -96,3 +96,4 @@ class AdaptiveConv2DMod(nn.Module):
         weights = self.weights
 
         if self.adaptive:
+            weights = repeat(weights, '... -> b ...', b = b)
