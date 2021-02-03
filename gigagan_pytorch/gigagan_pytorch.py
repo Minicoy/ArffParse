@@ -101,3 +101,6 @@ class AdaptiveConv2DMod(nn.Module):
             # determine an adaptive weight and 'select' the kernel to use with softmax
 
             selections = self.to_adaptive_weight(embed).softmax(dim = -1)
+            selections = rearrange(selections, 'b n -> b n 1 1 1 1')
+
+            weights = reduce(weights * selections, 'b n ... -> b ...', 'sum')
