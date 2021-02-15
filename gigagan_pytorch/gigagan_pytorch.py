@@ -104,3 +104,5 @@ class AdaptiveConv2DMod(nn.Module):
             selections = rearrange(selections, 'b n -> b n 1 1 1 1')
 
             weights = reduce(weights * selections, 'b n ... -> b ...', 'sum')
+
+        # do the modulation, demodulation, as done in stylegan2
