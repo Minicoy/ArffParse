@@ -106,3 +106,5 @@ class AdaptiveConv2DMod(nn.Module):
             weights = reduce(weights * selections, 'b n ... -> b ...', 'sum')
 
         # do the modulation, demodulation, as done in stylegan2
+
+        mod = self.to_mod(embed)
