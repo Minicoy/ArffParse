@@ -110,3 +110,7 @@ class AdaptiveConv2DMod(nn.Module):
         mod = self.to_mod(embed)
 
         mod = rearrange(mod, 'b i -> b 1 i 1 1')
+
+        weights = weights * (mod + 1)
+
+        if self.demod:
