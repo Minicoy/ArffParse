@@ -108,3 +108,5 @@ class AdaptiveConv2DMod(nn.Module):
         # do the modulation, demodulation, as done in stylegan2
 
         mod = self.to_mod(embed)
+
+        mod = rearrange(mod, 'b i -> b 1 i 1 1')
