@@ -114,3 +114,5 @@ class AdaptiveConv2DMod(nn.Module):
         weights = weights * (mod + 1)
 
         if self.demod:
+            inv_norm = reduce(weights ** 2, 'b o i k1 k2 -> b o 1 1 1', 'sum').clamp(min = self.eps).rsqrt()
+            weights = weights * inv_norm
