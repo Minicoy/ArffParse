@@ -118,3 +118,5 @@ class AdaptiveConv2DMod(nn.Module):
             weights = weights * inv_norm
 
         fmap = rearrange(fmap, 'b c h w -> 1 (b c) h w')
+
+        weights = rearrange(weights, 'b o ... -> (b o) ...')
