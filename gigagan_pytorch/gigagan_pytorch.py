@@ -120,3 +120,5 @@ class AdaptiveConv2DMod(nn.Module):
         fmap = rearrange(fmap, 'b c h w -> 1 (b c) h w')
 
         weights = rearrange(weights, 'b o ... -> (b o) ...')
+
+        padding = get_same_padding(h, self.kernel, self.dilation, self.stride)
