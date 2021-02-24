@@ -123,3 +123,5 @@ class AdaptiveConv2DMod(nn.Module):
 
         padding = get_same_padding(h, self.kernel, self.dilation, self.stride)
         fmap = F.conv2d(fmap, weights, padding = padding, groups = b)
+
+        return rearrange(fmap, '1 (b o) ... -> b o ...', b = b)
