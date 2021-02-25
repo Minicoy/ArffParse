@@ -125,3 +125,5 @@ class AdaptiveConv2DMod(nn.Module):
         fmap = F.conv2d(fmap, weights, padding = padding, groups = b)
 
         return rearrange(fmap, '1 (b o) ... -> b o ...', b = b)
+
+# attention
