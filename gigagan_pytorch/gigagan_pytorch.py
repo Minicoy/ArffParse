@@ -127,3 +127,5 @@ class AdaptiveConv2DMod(nn.Module):
         return rearrange(fmap, '1 (b o) ... -> b o ...', b = b)
 
 # attention
+# they use an attention with a better Lipchitz constant - l2 distance similarity instead of dot product - also shared query / key space - shown in vitgan to be more stable
+# not sure what they did about token attention to self, so masking out, as done in some other papers using shared query / key space
