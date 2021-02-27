@@ -134,3 +134,6 @@ class SelfAttention(nn.Module):
     def __init__(
         self,
         dim,
+        dim_head = 64,
+        heads = 8,
+        mask_self_value = -1e2
