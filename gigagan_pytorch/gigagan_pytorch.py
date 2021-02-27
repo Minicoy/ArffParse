@@ -133,3 +133,4 @@ class AdaptiveConv2DMod(nn.Module):
 class SelfAttention(nn.Module):
     def __init__(
         self,
+        dim,
