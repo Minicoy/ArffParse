@@ -137,3 +137,6 @@ class SelfAttention(nn.Module):
         dim_head = 64,
         heads = 8,
         mask_self_value = -1e2
+    ):
+        super().__init__()
+        self.heads = heads
