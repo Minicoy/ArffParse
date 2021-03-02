@@ -144,3 +144,5 @@ class SelfAttention(nn.Module):
         dim_inner = dim_head * heads
 
         self.mask_self_value = mask_self_value
+
+        self.norm = ChannelRMSNorm(dim)
