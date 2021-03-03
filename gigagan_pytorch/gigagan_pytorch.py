@@ -148,3 +148,7 @@ class SelfAttention(nn.Module):
         self.norm = ChannelRMSNorm(dim)
         self.to_qk = nn.Conv2d(dim, dim_inner, 1, bias = False)
         self.to_v = nn.Conv2d(dim, dim_inner, 1, bias = False)
+
+        self.null_kv = nn.Parameter(torch.randn(2, heads, dim_head))
+
+        self.to_out = nn.Conv2d(dim_inner, dim, 1, bias = False)
