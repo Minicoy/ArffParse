@@ -146,3 +146,5 @@ class SelfAttention(nn.Module):
         self.mask_self_value = mask_self_value
 
         self.norm = ChannelRMSNorm(dim)
+        self.to_qk = nn.Conv2d(dim, dim_inner, 1, bias = False)
+        self.to_v = nn.Conv2d(dim, dim_inner, 1, bias = False)
