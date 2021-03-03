@@ -152,3 +152,7 @@ class SelfAttention(nn.Module):
         self.null_kv = nn.Parameter(torch.randn(2, heads, dim_head))
 
         self.to_out = nn.Conv2d(dim_inner, dim, 1, bias = False)
+
+    def forward(self, fmap):
+        """
+        einstein notation
