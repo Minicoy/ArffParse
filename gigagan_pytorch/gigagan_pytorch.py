@@ -160,3 +160,6 @@ class SelfAttention(nn.Module):
         b - batch
         h - heads
         x - height
+        y - width
+        d - dimension
+        i - source seq (attend from)
