@@ -159,3 +159,4 @@ class SelfAttention(nn.Module):
 
         b - batch
         h - heads
+        x - height
