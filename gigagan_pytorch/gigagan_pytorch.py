@@ -156,3 +156,6 @@ class SelfAttention(nn.Module):
     def forward(self, fmap):
         """
         einstein notation
+
+        b - batch
+        h - heads
