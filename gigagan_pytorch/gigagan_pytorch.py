@@ -163,3 +163,8 @@ class SelfAttention(nn.Module):
         y - width
         d - dimension
         i - source seq (attend from)
+        j - target seq (attend to)
+        """
+        batch, device = fmap.shape[0], fmap.device
+
+        fmap = self.norm(fmap)
