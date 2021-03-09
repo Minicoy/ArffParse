@@ -170,3 +170,5 @@ class SelfAttention(nn.Module):
         fmap = self.norm(fmap)
 
         x, y = fmap.shape[-2:]
+
+        h = self.heads
