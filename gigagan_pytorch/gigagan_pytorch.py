@@ -168,3 +168,5 @@ class SelfAttention(nn.Module):
         batch, device = fmap.shape[0], fmap.device
 
         fmap = self.norm(fmap)
+
+        x, y = fmap.shape[-2:]
