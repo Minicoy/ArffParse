@@ -179,3 +179,5 @@ class SelfAttention(nn.Module):
         q, k = qk, qk
 
         # add a null key / value, so network can choose to pay attention to nothing
+
+        nk, nv = map(lambda t: repeat(t, 'h d -> (b h) 1 d', b = batch), self.null_kv)
