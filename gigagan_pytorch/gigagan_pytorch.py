@@ -177,3 +177,5 @@ class SelfAttention(nn.Module):
         qk, v = map(lambda t: rearrange(t, 'b (h d) x y -> (b h) (x y) d', h = self.heads), (qk, v))
 
         q, k = qk, qk
+
+        # add a null key / value, so network can choose to pay attention to nothing
