@@ -186,3 +186,7 @@ class SelfAttention(nn.Module):
         v = torch.cat((nv, v), dim = -2)
 
         # l2 distance
+
+        sim = -torch.cdist(q, k, p = 2) * self.scale
+
+        # following what was done in reformer for shared query / key space
