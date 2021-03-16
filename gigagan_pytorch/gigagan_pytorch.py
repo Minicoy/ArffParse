@@ -184,3 +184,5 @@ class SelfAttention(nn.Module):
 
         k = torch.cat((nk, k), dim = -2)
         v = torch.cat((nv, v), dim = -2)
+
+        # l2 distance
