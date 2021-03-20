@@ -200,3 +200,5 @@ class SelfAttention(nn.Module):
         # attention
 
         attn = sim.softmax(dim = -1)
+
+        out = einsum('b i j, b j d -> b i d', attn, v)
