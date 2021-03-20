@@ -193,3 +193,4 @@ class SelfAttention(nn.Module):
         # omit attention to self
 
         self_mask = torch.eye(sim.shape[-2], device = device, dtype = torch.bool)
+        self_mask = F.pad(self_mask, (1, 0), value = False)
