@@ -194,3 +194,5 @@ class SelfAttention(nn.Module):
 
         self_mask = torch.eye(sim.shape[-2], device = device, dtype = torch.bool)
         self_mask = F.pad(self_mask, (1, 0), value = False)
+
+        sim = sim.masked_fill(self_mask, self.mask_self_value)
