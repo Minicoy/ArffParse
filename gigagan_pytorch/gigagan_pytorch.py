@@ -213,3 +213,5 @@ class CrossAttention(nn.Module):
         dim,
         dim_head = 64,
         heads = 8
+    ):
+        super().__init__()
