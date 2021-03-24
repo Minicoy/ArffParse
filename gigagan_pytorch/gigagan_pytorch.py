@@ -208,3 +208,4 @@ class SelfAttention(nn.Module):
         return self.to_out(out)
 
 class CrossAttention(nn.Module):
+    def __init__(
