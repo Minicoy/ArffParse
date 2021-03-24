@@ -209,3 +209,6 @@ class SelfAttention(nn.Module):
 
 class CrossAttention(nn.Module):
     def __init__(
+        self,
+        dim,
+        dim_head = 64,
