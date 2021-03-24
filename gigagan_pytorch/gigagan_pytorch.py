@@ -212,3 +212,4 @@ class CrossAttention(nn.Module):
         self,
         dim,
         dim_head = 64,
+        heads = 8
