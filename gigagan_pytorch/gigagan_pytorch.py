@@ -217,3 +217,4 @@ class CrossAttention(nn.Module):
         super().__init__()
         self.heads = heads
         self.scale = dim_head ** -0.5
+        dim_inner = dim_head * heads
