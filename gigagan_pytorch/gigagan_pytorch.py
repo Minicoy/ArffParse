@@ -221,3 +221,5 @@ class CrossAttention(nn.Module):
 
         self.norm = ChannelRMSNorm(dim)
         self.norm_context = RMSNorm(dim)
+
+        self.to_q = nn.Conv2d(dim, dim_inner, 1, bias = False)
