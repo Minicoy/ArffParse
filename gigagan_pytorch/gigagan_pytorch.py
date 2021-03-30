@@ -225,3 +225,5 @@ class CrossAttention(nn.Module):
         self.to_q = nn.Conv2d(dim, dim_inner, 1, bias = False)
         self.to_kv = nn.Linear(dim, dim_inner * 2, bias = False)
         self.to_out = nn.Conv2d(dim_inner, dim, 1, bias = False)
+
+    def forward(self, fmap, context):
