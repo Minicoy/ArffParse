@@ -227,3 +227,7 @@ class CrossAttention(nn.Module):
         self.to_out = nn.Conv2d(dim_inner, dim, 1, bias = False)
 
     def forward(self, fmap, context):
+        """
+        einstein notation
+
+        b - batch
