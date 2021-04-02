@@ -231,3 +231,5 @@ class CrossAttention(nn.Module):
         einstein notation
 
         b - batch
+        h - heads
+        x - height
