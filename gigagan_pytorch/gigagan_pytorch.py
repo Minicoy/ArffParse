@@ -238,3 +238,5 @@ class CrossAttention(nn.Module):
         i - source seq (attend from)
         j - target seq (attend to)
         """
+
+        fmap = self.norm(fmap)
