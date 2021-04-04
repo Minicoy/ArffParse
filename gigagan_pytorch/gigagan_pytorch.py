@@ -237,3 +237,4 @@ class CrossAttention(nn.Module):
         d - dimension
         i - source seq (attend from)
         j - target seq (attend to)
+        """
