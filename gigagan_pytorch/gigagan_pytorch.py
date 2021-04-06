@@ -243,3 +243,7 @@ class CrossAttention(nn.Module):
         context = self.norm_context(context)
 
         x, y = fmap.shape[-2:]
+
+        h = self.heads
+
+        q, k, v = (self.to_q(fmap), *self.to_kv(context).chunk(2, dim = -1))
