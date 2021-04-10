@@ -251,3 +251,5 @@ class CrossAttention(nn.Module):
         k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = h), (k, v))
 
         q = rearrange(q, 'b (h d) x y -> (b h) (x y) d', h = self.heads)
+
+        sim = -torch.cdist(q, k, p = 2) * self.scale # l2 distance
