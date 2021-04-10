@@ -255,3 +255,7 @@ class CrossAttention(nn.Module):
         sim = -torch.cdist(q, k, p = 2) * self.scale # l2 distance
 
         attn = sim.softmax(dim = -1)
+
+        out = einsum('b i j, b j d -> b i d', attn, v)
+
+        out = rearrange(out, '(b h) (x y) d -> b (h d) x y', x = x, y = y, h = h)
