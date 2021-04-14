@@ -259,3 +259,7 @@ class CrossAttention(nn.Module):
         out = einsum('b i j, b j d -> b i d', attn, v)
 
         out = rearrange(out, '(b h) (x y) d -> b (h d) x y', x = x, y = y, h = h)
+
+        return self.to_out(out)
+
+# classic transformer attention, stick with l2 distance
