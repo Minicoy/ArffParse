@@ -263,3 +263,5 @@ class CrossAttention(nn.Module):
         return self.to_out(out)
 
 # classic transformer attention, stick with l2 distance
+
+class TextAttention(nn.Module):
