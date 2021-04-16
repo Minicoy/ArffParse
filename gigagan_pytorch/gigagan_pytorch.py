@@ -272,3 +272,4 @@ class TextAttention(nn.Module):
         heads = 8,
         mask_self_value = -1e2
     ):
+        super().__init__()
