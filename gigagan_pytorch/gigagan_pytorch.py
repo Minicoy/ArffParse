@@ -265,3 +265,7 @@ class CrossAttention(nn.Module):
 # classic transformer attention, stick with l2 distance
 
 class TextAttention(nn.Module):
+    def __init__(
+        self,
+        dim,
+        dim_head = 64,
