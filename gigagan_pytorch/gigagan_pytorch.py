@@ -276,3 +276,5 @@ class TextAttention(nn.Module):
         self.heads = heads
         self.scale = dim_head ** -0.5
         dim_inner = dim_head * heads
+
+        self.mask_self_value = mask_self_value
