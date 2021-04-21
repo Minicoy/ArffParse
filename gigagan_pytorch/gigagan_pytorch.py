@@ -284,3 +284,5 @@ class TextAttention(nn.Module):
         self.to_v = nn.Linear(dim, dim_inner, bias = False)
 
         self.null_kv = nn.Parameter(torch.randn(2, heads, dim_head))
+
+        self.to_out = nn.Linear(dim_inner, dim, bias = False)
