@@ -278,3 +278,7 @@ class TextAttention(nn.Module):
         dim_inner = dim_head * heads
 
         self.mask_self_value = mask_self_value
+
+        self.norm = RMSNorm(dim)
+        self.to_qk = nn.Linear(dim, dim_inner, bias = False)
+        self.to_v = nn.Linear(dim, dim_inner, bias = False)
