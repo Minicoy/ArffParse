@@ -282,3 +282,5 @@ class TextAttention(nn.Module):
         self.norm = RMSNorm(dim)
         self.to_qk = nn.Linear(dim, dim_inner, bias = False)
         self.to_v = nn.Linear(dim, dim_inner, bias = False)
+
+        self.null_kv = nn.Parameter(torch.randn(2, heads, dim_head))
