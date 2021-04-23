@@ -286,3 +286,6 @@ class TextAttention(nn.Module):
         self.null_kv = nn.Parameter(torch.randn(2, heads, dim_head))
 
         self.to_out = nn.Linear(dim_inner, dim, bias = False)
+
+    def forward(self, encodings, mask = None):
+        """
