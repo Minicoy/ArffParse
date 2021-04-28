@@ -292,3 +292,4 @@ class TextAttention(nn.Module):
         einstein notation
 
         b - batch
+        h - heads
