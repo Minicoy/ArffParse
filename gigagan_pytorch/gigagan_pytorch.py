@@ -290,3 +290,5 @@ class TextAttention(nn.Module):
     def forward(self, encodings, mask = None):
         """
         einstein notation
+
+        b - batch
