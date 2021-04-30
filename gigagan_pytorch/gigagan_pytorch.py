@@ -293,3 +293,6 @@ class TextAttention(nn.Module):
 
         b - batch
         h - heads
+        x - height
+        y - width
+        d - dimension
