@@ -296,3 +296,4 @@ class TextAttention(nn.Module):
         x - height
         y - width
         d - dimension
+        i - source seq (attend from)
