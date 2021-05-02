@@ -299,3 +299,6 @@ class TextAttention(nn.Module):
         i - source seq (attend from)
         j - target seq (attend to)
         """
+        batch, device = encodings.shape[0], encodings.device
+
+        encodings = self.norm(encodings)
