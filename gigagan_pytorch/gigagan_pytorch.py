@@ -304,3 +304,5 @@ class TextAttention(nn.Module):
         encodings = self.norm(encodings)
 
         h = self.heads
+
+        qk, v = self.to_qk(encodings), self.to_v(encodings)
