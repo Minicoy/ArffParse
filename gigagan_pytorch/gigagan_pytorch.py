@@ -302,3 +302,5 @@ class TextAttention(nn.Module):
         batch, device = encodings.shape[0], encodings.device
 
         encodings = self.norm(encodings)
+
+        h = self.heads
