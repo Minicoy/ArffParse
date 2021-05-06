@@ -307,3 +307,5 @@ class TextAttention(nn.Module):
 
         qk, v = self.to_qk(encodings), self.to_v(encodings)
         qk, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h = self.heads), (qk, v))
+
+        q, k = qk, qk
