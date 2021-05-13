@@ -315,3 +315,4 @@ class TextAttention(nn.Module):
         nk, nv = map(lambda t: repeat(t, 'h d -> (b h) 1 d', b = batch), self.null_kv)
 
         k = torch.cat((nk, k), dim = -2)
+        v = torch.cat((nv, v), dim = -2)
