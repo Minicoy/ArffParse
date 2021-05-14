@@ -320,3 +320,8 @@ class TextAttention(nn.Module):
         # l2 distance
 
         sim = -torch.cdist(q, k, p = 2) * self.scale
+
+        # following what was done in reformer for shared query / key space
+        # omit attention to self
+
+        self_mask = torch.eye(sim.shape[-2], device = device, dtype = torch.bool)
