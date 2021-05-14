@@ -316,3 +316,7 @@ class TextAttention(nn.Module):
 
         k = torch.cat((nk, k), dim = -2)
         v = torch.cat((nv, v), dim = -2)
+
+        # l2 distance
+
+        sim = -torch.cdist(q, k, p = 2) * self.scale
