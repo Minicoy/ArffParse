@@ -330,3 +330,7 @@ class TextAttention(nn.Module):
         sim = sim.masked_fill(self_mask, self.mask_self_value)
 
         # key padding mask
+
+        if exists(mask):
+            mask = F.pad(mask, (1, 0), value = True)
+            mask = repeat(mask, 'b n -> (b h) 1 n', h = h)
