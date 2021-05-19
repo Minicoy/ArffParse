@@ -334,3 +334,4 @@ class TextAttention(nn.Module):
         if exists(mask):
             mask = F.pad(mask, (1, 0), value = True)
             mask = repeat(mask, 'b n -> (b h) 1 n', h = h)
+            sim = sim.masked_fill(~mask, -torch.finfo(sim.dtype).max)
