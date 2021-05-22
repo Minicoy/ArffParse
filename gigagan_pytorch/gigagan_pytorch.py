@@ -337,3 +337,5 @@ class TextAttention(nn.Module):
             sim = sim.masked_fill(~mask, -torch.finfo(sim.dtype).max)
 
         # attention
+
+        attn = sim.softmax(dim = -1)
