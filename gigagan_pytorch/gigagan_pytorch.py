@@ -342,3 +342,5 @@ class TextAttention(nn.Module):
         out = einsum('b i j, b j d -> b i d', attn, v)
 
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
+
+        return self.to_out(out)
