@@ -346,3 +346,5 @@ class TextAttention(nn.Module):
         return self.to_out(out)
 
 # feedforward
+
+def FeedForward(dim, mult = 4):
