@@ -344,3 +344,5 @@ class TextAttention(nn.Module):
         out = rearrange(out, '(b h) n d -> b n (h d)', h = h)
 
         return self.to_out(out)
+
+# feedforward
