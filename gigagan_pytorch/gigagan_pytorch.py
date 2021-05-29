@@ -351,3 +351,5 @@ def FeedForward(dim, mult = 4):
     dim_hidden = int(dim * mult)
     return nn.Sequential(
         RMSNorm(dim),
+        nn.Linear(dim, dim_hidden),
+        nn.GELU(),
