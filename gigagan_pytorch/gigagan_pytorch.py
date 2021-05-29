@@ -353,3 +353,4 @@ def FeedForward(dim, mult = 4):
         RMSNorm(dim),
         nn.Linear(dim, dim_hidden),
         nn.GELU(),
+        nn.Linear(dim_hidden, dim)
