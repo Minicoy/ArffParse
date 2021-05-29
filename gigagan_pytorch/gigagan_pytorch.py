@@ -348,3 +348,4 @@ class TextAttention(nn.Module):
 # feedforward
 
 def FeedForward(dim, mult = 4):
+    dim_hidden = int(dim * mult)
