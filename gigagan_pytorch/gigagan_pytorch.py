@@ -355,3 +355,5 @@ def FeedForward(dim, mult = 4):
         nn.GELU(),
         nn.Linear(dim_hidden, dim)
     )
+
+# transformer
