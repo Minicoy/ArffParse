@@ -357,3 +357,5 @@ def FeedForward(dim, mult = 4):
     )
 
 # transformer
+
+class Transformer(nn.Module):
