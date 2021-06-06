@@ -360,3 +360,4 @@ def FeedForward(dim, mult = 4):
 
 class Transformer(nn.Module):
     def __init__(
+        self,
