@@ -365,3 +365,4 @@ class Transformer(nn.Module):
         depth,
         dim_head = 64,
         heads = 8,
+        ff_mult = 4
