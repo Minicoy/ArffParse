@@ -367,3 +367,6 @@ class Transformer(nn.Module):
         heads = 8,
         ff_mult = 4
     ):
+        super().__init__()
+        self.layers = nn.ModuleList([])
+        for _ in range(depth):
