@@ -370,3 +370,4 @@ class Transformer(nn.Module):
         super().__init__()
         self.layers = nn.ModuleList([])
         for _ in range(depth):
+            self.layers.append(nn.ModuleList([
