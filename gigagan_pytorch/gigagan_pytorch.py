@@ -374,3 +374,5 @@ class Transformer(nn.Module):
                 TextAttention(dim = dim, dim_head = dim_head, heads = heads),
                 FeedForward(dim = dim, mult = ff_mult)
             ]))
+
+        self.norm = RMSNorm(dim)
