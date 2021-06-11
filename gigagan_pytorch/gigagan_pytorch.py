@@ -373,3 +373,4 @@ class Transformer(nn.Module):
             self.layers.append(nn.ModuleList([
                 TextAttention(dim = dim, dim_head = dim_head, heads = heads),
                 FeedForward(dim = dim, mult = ff_mult)
+            ]))
