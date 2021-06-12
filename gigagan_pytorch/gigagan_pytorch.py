@@ -379,3 +379,4 @@ class Transformer(nn.Module):
 
     def forward(self, x, mask = None):
         for attn, ff in self.layers:
+            x = attn(x, mask = mask) + x
