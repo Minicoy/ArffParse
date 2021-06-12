@@ -376,3 +376,6 @@ class Transformer(nn.Module):
             ]))
 
         self.norm = RMSNorm(dim)
+
+    def forward(self, x, mask = None):
+        for attn, ff in self.layers:
