@@ -383,3 +383,5 @@ class Transformer(nn.Module):
             x = ff(x) + x
 
         return self.norm(x)
+
+# text encoder
