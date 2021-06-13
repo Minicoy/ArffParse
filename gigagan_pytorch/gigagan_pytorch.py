@@ -381,3 +381,5 @@ class Transformer(nn.Module):
         for attn, ff in self.layers:
             x = attn(x, mask = mask) + x
             x = ff(x) + x
+
+        return self.norm(x)
