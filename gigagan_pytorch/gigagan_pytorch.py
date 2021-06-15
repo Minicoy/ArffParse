@@ -385,3 +385,6 @@ class Transformer(nn.Module):
         return self.norm(x)
 
 # text encoder
+
+@beartype
+class TextEncoder(nn.Module):
