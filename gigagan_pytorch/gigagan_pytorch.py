@@ -390,3 +390,7 @@ class Transformer(nn.Module):
 class TextEncoder(nn.Module):
     def __init__(
         self,
+        *,
+        clip: OpenClipAdapter,
+        dim,
+        depth,
