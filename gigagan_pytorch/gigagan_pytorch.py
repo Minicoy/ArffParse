@@ -389,3 +389,4 @@ class Transformer(nn.Module):
 @beartype
 class TextEncoder(nn.Module):
     def __init__(
+        self,
