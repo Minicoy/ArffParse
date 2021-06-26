@@ -396,3 +396,4 @@ class TextEncoder(nn.Module):
         depth,
         dim_head = 64,
         heads = 8,
+    ):
