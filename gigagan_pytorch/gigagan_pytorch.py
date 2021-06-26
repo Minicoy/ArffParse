@@ -394,3 +394,5 @@ class TextEncoder(nn.Module):
         clip: OpenClipAdapter,
         dim,
         depth,
+        dim_head = 64,
+        heads = 8,
