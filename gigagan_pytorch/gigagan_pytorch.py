@@ -397,3 +397,5 @@ class TextEncoder(nn.Module):
         dim_head = 64,
         heads = 8,
     ):
+        super().__init__()
+        self.clip = clip
