@@ -399,3 +399,4 @@ class TextEncoder(nn.Module):
     ):
         super().__init__()
         self.clip = clip
+        self.learned_global_token = nn.Parameter(torch.randn(dim))
