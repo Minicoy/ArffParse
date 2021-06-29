@@ -400,3 +400,5 @@ class TextEncoder(nn.Module):
         super().__init__()
         self.clip = clip
         self.learned_global_token = nn.Parameter(torch.randn(dim))
+
+        self.project_in = nn.Linear(clip.dim_latent, dim) if clip.dim_latent != dim else nn.Identity()
