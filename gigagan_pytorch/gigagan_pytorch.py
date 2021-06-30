@@ -409,3 +409,5 @@ class TextEncoder(nn.Module):
             dim_head = dim_head,
             heads = heads
         )
+
+    def forward(
