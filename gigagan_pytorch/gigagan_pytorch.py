@@ -411,3 +411,5 @@ class TextEncoder(nn.Module):
         )
 
     def forward(
+        self,
+        texts: List[str]
