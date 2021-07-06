@@ -413,3 +413,5 @@ class TextEncoder(nn.Module):
     def forward(
         self,
         texts: List[str]
+    ):
+        _, text_encodings = self.clip.embed_texts(texts)
