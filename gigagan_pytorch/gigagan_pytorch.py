@@ -415,3 +415,6 @@ class TextEncoder(nn.Module):
         texts: List[str]
     ):
         _, text_encodings = self.clip.embed_texts(texts)
+        mask = (text_encodings != 0.).any(dim = -1)
+
+        text_encodings = self.project_in(text_encodings)
