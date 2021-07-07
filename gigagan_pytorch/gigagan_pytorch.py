@@ -418,3 +418,5 @@ class TextEncoder(nn.Module):
         mask = (text_encodings != 0.).any(dim = -1)
 
         text_encodings = self.project_in(text_encodings)
+
+        mask_with_global = F.pad(mask, (1, 0), value = True)
