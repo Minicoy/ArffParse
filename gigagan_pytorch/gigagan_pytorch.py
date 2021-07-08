@@ -423,3 +423,5 @@ class TextEncoder(nn.Module):
 
         batch = text_encodings.shape[0]
         global_tokens = repeat(self.learned_global_token, 'd -> b d', b = batch)
+
+        text_encodings, ps = pack([global_tokens, text_encodings], 'b * d')
