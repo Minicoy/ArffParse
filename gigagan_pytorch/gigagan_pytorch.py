@@ -420,3 +420,6 @@ class TextEncoder(nn.Module):
         text_encodings = self.project_in(text_encodings)
 
         mask_with_global = F.pad(mask, (1, 0), value = True)
+
+        batch = text_encodings.shape[0]
+        global_tokens = repeat(self.learned_global_token, 'd -> b d', b = batch)
