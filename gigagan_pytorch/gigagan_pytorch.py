@@ -425,3 +425,5 @@ class TextEncoder(nn.Module):
         global_tokens = repeat(self.learned_global_token, 'd -> b d', b = batch)
 
         text_encodings, ps = pack([global_tokens, text_encodings], 'b * d')
+
+        text_encodings = self.transformer(text_encodings, mask = mask_with_global)
