@@ -427,3 +427,7 @@ class TextEncoder(nn.Module):
         text_encodings, ps = pack([global_tokens, text_encodings], 'b * d')
 
         text_encodings = self.transformer(text_encodings, mask = mask_with_global)
+
+        global_tokens, text_encodings = unpack(text_encodings, ps, 'b * d')
+
+        return global_tokens, text_encodings, mask
