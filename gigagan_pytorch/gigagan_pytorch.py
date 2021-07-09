@@ -431,3 +431,5 @@ class TextEncoder(nn.Module):
         global_tokens, text_encodings = unpack(text_encodings, ps, 'b * d')
 
         return global_tokens, text_encodings, mask
+
+# style mapping network
