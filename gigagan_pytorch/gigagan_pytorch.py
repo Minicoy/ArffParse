@@ -441,3 +441,4 @@ class StyleNetwork(nn.Module):
         depth,
         dim_text_latent = 0,
         frac_gradient = 0.1  # in the stylegan2 paper, they control the learning rate by multiplying the parameters by a constant, but we can use another trick here from attention literature
+    ):
