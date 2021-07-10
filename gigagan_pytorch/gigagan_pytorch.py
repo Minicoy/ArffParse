@@ -433,3 +433,9 @@ class TextEncoder(nn.Module):
         return global_tokens, text_encodings, mask
 
 # style mapping network
+
+class StyleNetwork(nn.Module):
+    def __init__(
+        self,
+        dim,
+        depth,
