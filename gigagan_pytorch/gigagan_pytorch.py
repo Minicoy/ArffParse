@@ -445,3 +445,5 @@ class StyleNetwork(nn.Module):
         super().__init__()
 
         layers = []
+        for i in range(depth):
+            layers.extend([nn.Linear(dim + dim_text_latent, dim), leaky_relu()])
