@@ -450,3 +450,6 @@ class StyleNetwork(nn.Module):
 
         self.net = nn.Sequential(*layers)
         self.frac_gradient = frac_gradient
+        self.dim_text_latent = dim_text_latent
+
+    def forward(self, x, text_latent = None):
