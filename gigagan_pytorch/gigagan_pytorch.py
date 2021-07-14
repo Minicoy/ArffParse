@@ -447,3 +447,6 @@ class StyleNetwork(nn.Module):
         layers = []
         for i in range(depth):
             layers.extend([nn.Linear(dim + dim_text_latent, dim), leaky_relu()])
+
+        self.net = nn.Sequential(*layers)
+        self.frac_gradient = frac_gradient
