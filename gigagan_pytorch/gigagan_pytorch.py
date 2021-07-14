@@ -453,3 +453,4 @@ class StyleNetwork(nn.Module):
         self.dim_text_latent = dim_text_latent
 
     def forward(self, x, text_latent = None):
+        grad_frac = self.frac_gradient
