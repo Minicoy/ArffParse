@@ -454,3 +454,7 @@ class StyleNetwork(nn.Module):
 
     def forward(self, x, text_latent = None):
         grad_frac = self.frac_gradient
+
+        if self.dim_text_latent:
+            assert exists(text_latent)
+            x = torch.cat((x, text_latent), dim = -1)
