@@ -461,3 +461,5 @@ class StyleNetwork(nn.Module):
 
         x = F.normalize(x, dim = 1)
         out = self.net(x)
+
+        return out * grad_frac + (1 - grad_frac) * out.detach()
