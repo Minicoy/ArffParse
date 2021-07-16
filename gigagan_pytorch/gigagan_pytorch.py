@@ -458,3 +458,6 @@ class StyleNetwork(nn.Module):
         if self.dim_text_latent:
             assert exists(text_latent)
             x = torch.cat((x, text_latent), dim = -1)
+
+        x = F.normalize(x, dim = 1)
+        out = self.net(x)
