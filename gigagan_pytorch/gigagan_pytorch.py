@@ -465,3 +465,7 @@ class StyleNetwork(nn.Module):
         return out * grad_frac + (1 - grad_frac) * out.detach()
 
 # gan
+
+class GigaGAN(nn.Module):
+    def __init__(self):
+        super().__init__()
