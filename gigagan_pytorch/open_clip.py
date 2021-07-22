@@ -6,3 +6,5 @@ import open_clip
 
 from beartype import beartype
 from beartype.typing import List
+
+def l2norm(t):
