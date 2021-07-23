@@ -16,3 +16,4 @@ class OpenClipAdapter(nn.Module):
         self,
         name = 'ViT-B/32',
         pretrained = 'laion400m_e32',
+        tokenizer_name = 'ViT-B-32-quickgelu',
