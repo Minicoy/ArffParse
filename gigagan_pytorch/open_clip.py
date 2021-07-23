@@ -12,3 +12,4 @@ def l2norm(t):
 
 @beartype
 class OpenClipAdapter(nn.Module):
+    def __init__(
