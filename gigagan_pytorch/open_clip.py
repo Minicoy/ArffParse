@@ -14,3 +14,5 @@ def l2norm(t):
 class OpenClipAdapter(nn.Module):
     def __init__(
         self,
+        name = 'ViT-B/32',
+        pretrained = 'laion400m_e32',
