@@ -17,3 +17,4 @@ class OpenClipAdapter(nn.Module):
         name = 'ViT-B/32',
         pretrained = 'laion400m_e32',
         tokenizer_name = 'ViT-B-32-quickgelu',
+        eos_id = 49407
