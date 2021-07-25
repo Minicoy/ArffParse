@@ -19,3 +19,4 @@ class OpenClipAdapter(nn.Module):
         tokenizer_name = 'ViT-B-32-quickgelu',
         eos_id = 49407
     ):
+        super().__init__()
