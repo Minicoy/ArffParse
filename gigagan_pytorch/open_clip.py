@@ -20,3 +20,8 @@ class OpenClipAdapter(nn.Module):
         eos_id = 49407
     ):
         super().__init__()
+
+        clip, _, preprocess = open_clip.create_model_and_transforms(name, pretrained = pretrained)
+        tokenizer = open_clip.get_tokenizer(tokenizer_name)
+
+        self.clip = clip
