@@ -27,3 +27,5 @@ class OpenClipAdapter(nn.Module):
         self.clip = clip
         self.tokenizer = tokenizer
         self.eos_id = eos_id
+
+        text_attention_final = self.find_layer('ln_final')
