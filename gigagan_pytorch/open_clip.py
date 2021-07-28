@@ -25,3 +25,5 @@ class OpenClipAdapter(nn.Module):
         tokenizer = open_clip.get_tokenizer(tokenizer_name)
 
         self.clip = clip
+        self.tokenizer = tokenizer
+        self.eos_id = eos_id
