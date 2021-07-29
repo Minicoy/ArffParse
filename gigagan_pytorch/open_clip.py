@@ -29,3 +29,4 @@ class OpenClipAdapter(nn.Module):
         self.eos_id = eos_id
 
         text_attention_final = self.find_layer('ln_final')
+        self._dim_latent = text_attention_final.weight.shape[0]
