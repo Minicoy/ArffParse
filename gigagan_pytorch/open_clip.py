@@ -30,3 +30,6 @@ class OpenClipAdapter(nn.Module):
 
         text_attention_final = self.find_layer('ln_final')
         self._dim_latent = text_attention_final.weight.shape[0]
+
+        self.handle = text_attention_final.register_forward_hook(self._hook)
+        self.clip_normalize = preprocess.transforms[-1]
