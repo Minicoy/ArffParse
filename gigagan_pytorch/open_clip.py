@@ -33,3 +33,7 @@ class OpenClipAdapter(nn.Module):
 
         self.handle = text_attention_final.register_forward_hook(self._hook)
         self.clip_normalize = preprocess.transforms[-1]
+        self.cleared = False
+
+    def find_layer(self,  layer):
+        modules = dict([*self.clip.named_modules()])
