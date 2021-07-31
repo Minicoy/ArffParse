@@ -37,3 +37,4 @@ class OpenClipAdapter(nn.Module):
 
     def find_layer(self,  layer):
         modules = dict([*self.clip.named_modules()])
+        return modules.get(layer, None)
