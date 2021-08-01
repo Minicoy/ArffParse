@@ -42,3 +42,7 @@ class OpenClipAdapter(nn.Module):
     def clear(self):
         if self.cleared:
             return
+
+        self.handle()
+
+    def _hook(self, _, inputs, outputs):
