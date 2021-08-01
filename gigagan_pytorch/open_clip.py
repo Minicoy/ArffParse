@@ -40,3 +40,5 @@ class OpenClipAdapter(nn.Module):
         return modules.get(layer, None)
 
     def clear(self):
+        if self.cleared:
+            return
