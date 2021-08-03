@@ -49,3 +49,5 @@ class OpenClipAdapter(nn.Module):
         self.text_encodings = outputs
 
     @property
+    def dim_latent(self):
+        return self._dim_latent
