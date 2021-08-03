@@ -46,3 +46,6 @@ class OpenClipAdapter(nn.Module):
         self.handle()
 
     def _hook(self, _, inputs, outputs):
+        self.text_encodings = outputs
+
+    @property
