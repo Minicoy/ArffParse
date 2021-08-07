@@ -51,3 +51,7 @@ class OpenClipAdapter(nn.Module):
     @property
     def dim_latent(self):
         return self._dim_latent
+
+    @property
+    def image_size(self):
+        image_size = self.clip.visual.image_size
