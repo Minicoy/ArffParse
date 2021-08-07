@@ -55,3 +55,4 @@ class OpenClipAdapter(nn.Module):
     @property
     def image_size(self):
         image_size = self.clip.visual.image_size
+        if isinstance(image_size, tuple):
