@@ -62,3 +62,5 @@ class OpenClipAdapter(nn.Module):
     @property
     def image_channels(self):
         return 3
+
+    @property
