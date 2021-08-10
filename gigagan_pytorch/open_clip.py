@@ -64,3 +64,4 @@ class OpenClipAdapter(nn.Module):
         return 3
 
     @property
+    def max_text_len(self):
