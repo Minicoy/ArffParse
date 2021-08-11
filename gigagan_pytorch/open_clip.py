@@ -65,3 +65,7 @@ class OpenClipAdapter(nn.Module):
 
     @property
     def max_text_len(self):
+        return self.clip.positional_embedding.shape[0]
+
+    def embed_texts(
+        self,
