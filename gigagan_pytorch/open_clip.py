@@ -69,3 +69,7 @@ class OpenClipAdapter(nn.Module):
 
     def embed_texts(
         self,
+        texts: List[str]
+    ):
+        ids = self.tokenizer(texts)
+        ids = ids[..., :self.max_text_len]
