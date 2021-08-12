@@ -75,3 +75,6 @@ class OpenClipAdapter(nn.Module):
         ids = ids[..., :self.max_text_len]
 
         is_eos_id = (ids == self.eos_id)
+        text_mask_excluding_eos = is_eos_id.cumsum(dim = -1) == 0
+        text_mask = F.pad(text_mask_excluding_eos, (1, -1), value = True)
+        text_mask = text_mask & (ids != 0)
