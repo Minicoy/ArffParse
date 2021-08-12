@@ -73,3 +73,5 @@ class OpenClipAdapter(nn.Module):
     ):
         ids = self.tokenizer(texts)
         ids = ids[..., :self.max_text_len]
+
+        is_eos_id = (ids == self.eos_id)
