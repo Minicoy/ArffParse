@@ -81,3 +81,5 @@ class OpenClipAdapter(nn.Module):
         assert not self.cleared
 
         text_embed = self.clip.encode_text(ids)
+        text_encodings = self.text_encodings
+        text_encodings = text_encodings.masked_fill(~text_mask[..., None], 0.)
