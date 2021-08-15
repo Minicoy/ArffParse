@@ -78,3 +78,6 @@ class OpenClipAdapter(nn.Module):
         text_mask_excluding_eos = is_eos_id.cumsum(dim = -1) == 0
         text_mask = F.pad(text_mask_excluding_eos, (1, -1), value = True)
         text_mask = text_mask & (ids != 0)
+        assert not self.cleared
+
+        text_embed = self.clip.encode_text(ids)
