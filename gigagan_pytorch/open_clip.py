@@ -83,3 +83,5 @@ class OpenClipAdapter(nn.Module):
         text_embed = self.clip.encode_text(ids)
         text_encodings = self.text_encodings
         text_encodings = text_encodings.masked_fill(~text_mask[..., None], 0.)
+        del self.text_encodings
+        return l2norm(text_embed.float()), text_encodings.float()
