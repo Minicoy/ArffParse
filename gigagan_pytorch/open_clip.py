@@ -85,3 +85,6 @@ class OpenClipAdapter(nn.Module):
         text_encodings = text_encodings.masked_fill(~text_mask[..., None], 0.)
         del self.text_encodings
         return l2norm(text_embed.float()), text_encodings.float()
+
+    def embed_image(self, image):
+        assert not self.cleared
