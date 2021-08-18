@@ -88,3 +88,4 @@ class OpenClipAdapter(nn.Module):
 
     def embed_image(self, image):
         assert not self.cleared
+        image = self.clip_normalize(image)
