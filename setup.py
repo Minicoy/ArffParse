@@ -1,1 +1,1 @@
-from setuptoo
+from setuptools
