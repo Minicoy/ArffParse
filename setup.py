@@ -1,1 +1,1 @@
-from setuptools import se
+from setuptools import set
