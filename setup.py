@@ -1,1 +1,1 @@
-from setuptools import setup, fin
+from setuptools import setup, find_
