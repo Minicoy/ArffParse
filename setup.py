@@ -1,1 +1,1 @@
-from setuptools import setup, find_pa
+from setuptools import setup, find_pac
