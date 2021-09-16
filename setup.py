@@ -1,1 +1,1 @@
-from setuptools import setup, find_packag
+from setuptools import setup, find_packages
