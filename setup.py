@@ -2,4 +2,4 @@ from setuptools import setup, find_packages
 
 setup(
   name = 'gigagan-pytorch',
-  packages = find_packages(exc
+  packages = find_packages(excl
