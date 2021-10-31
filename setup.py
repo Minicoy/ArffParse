@@ -4,4 +4,4 @@ setup(
   name = 'gigagan-pytorch',
   packages = find_packages(exclude=[]),
   version = '0.0.1',
-  lice
+  licen
