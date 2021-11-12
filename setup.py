@@ -5,4 +5,4 @@ setup(
   packages = find_packages(exclude=[]),
   version = '0.0.1',
   license='MIT',
-  description = '
+  description = 'Gi
