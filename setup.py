@@ -7,4 +7,4 @@ setup(
   license='MIT',
   description = 'GigaGAN - Pytorch',
   author = 'Phil Wang',
-  author_email =
+  author_email = '
