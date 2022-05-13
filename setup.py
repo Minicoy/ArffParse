@@ -8,4 +8,4 @@ setup(
   description = 'GigaGAN - Pytorch',
   author = 'Phil Wang',
   author_email = 'lucidrains@gmail.com',
-  long_description_con
+  long_description_cont
