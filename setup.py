@@ -9,4 +9,4 @@ setup(
   author = 'Phil Wang',
   author_email = 'lucidrains@gmail.com',
   long_description_content_type = 'text/markdown',
-  url = 'https://github.com/lucidrains
+  url = 'https://github.com/lucidrains/E
