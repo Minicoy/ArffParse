@@ -10,4 +10,4 @@ setup(
   author_email = 'lucidrains@gmail.com',
   long_description_content_type = 'text/markdown',
   url = 'https://github.com/lucidrains/ETSformer-pytorch',
-  keywords = 
+  keywords = [
