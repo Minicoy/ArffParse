@@ -12,4 +12,5 @@ setup(
   url = 'https://github.com/lucidrains/ETSformer-pytorch',
   keywords = [
     'artificial intelligence',
-    'deep learnin
+    'deep learning',
+ 
