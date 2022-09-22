@@ -13,4 +13,4 @@ setup(
   keywords = [
     'artificial intelligence',
     'deep learning',
-    'generative adversarial network
+    'generative adversarial networks'
