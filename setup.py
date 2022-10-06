@@ -15,4 +15,4 @@ setup(
     'deep learning',
     'generative adversarial networks'
   ],
-  install_req
+  install_requi
