@@ -16,3 +16,4 @@ setup(
     'generative adversarial networks'
   ],
   install_requires=[
+ 
