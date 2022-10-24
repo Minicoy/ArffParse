@@ -17,4 +17,4 @@ setup(
   ],
   install_requires=[
     'accelerate',
-    'b
+    'bea
