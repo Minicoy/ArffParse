@@ -17,4 +17,5 @@ setup(
   ],
   install_requires=[
     'accelerate',
-    'beartype'
+    'beartype',
+ 
