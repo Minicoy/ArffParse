@@ -18,4 +18,4 @@ setup(
   install_requires=[
     'accelerate',
     'beartype',
- 
+  
