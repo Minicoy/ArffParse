@@ -18,4 +18,4 @@ setup(
   install_requires=[
     'accelerate',
     'beartype',
-    'einops>=0.
+    'einops>=0.4'
