@@ -19,3 +19,4 @@ setup(
     'accelerate',
     'beartype',
     'einops>=0.4',
+   
