@@ -19,4 +19,4 @@ setup(
     'accelerate',
     'beartype',
     'einops>=0.4',
-    'open-cli
+    'open-clip-t
