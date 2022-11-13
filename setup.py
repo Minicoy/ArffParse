@@ -19,4 +19,4 @@ setup(
     'accelerate',
     'beartype',
     'einops>=0.4',
-    'open-clip-torch>=
+    'open-clip-torch>=2
