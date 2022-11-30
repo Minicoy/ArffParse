@@ -21,3 +21,4 @@ setup(
     'einops>=0.4',
     'open-clip-torch>=2.0.0,<3.0.0',
     'torch>=1.6',
+  ],
