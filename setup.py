@@ -23,4 +23,4 @@ setup(
     'torch>=1.6',
   ],
   classifiers=[
-    'Development Status :: 4 -
+    'Development Status :: 4 - B
