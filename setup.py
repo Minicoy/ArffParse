@@ -24,4 +24,4 @@ setup(
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
-    'Intended Audience :: De
+    'Intended Audience :: Develop
