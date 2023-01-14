@@ -25,4 +25,4 @@ setup(
   classifiers=[
     'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
-    'Topic :: Scientific/Engineering :: Artif
+    'Topic :: Scientific/Engineering :: Artificial 
